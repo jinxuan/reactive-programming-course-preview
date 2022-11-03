@@ -3,7 +3,17 @@ import reactor.core.publisher.Flux;
 public class Task {
 
 	public static Flux<Long> createSequence() {
-		return Flux.error(new ToDoException());
+//		return Flux.error(new ToDoException());
+
+		return Flux.<Long, State>generate(() -> STATE_ONE, ((state, sink) -> {
+			sink.next(state.value);
+
+			if (state.iteration == 19) {
+				sink.complete();
+			}
+
+			return new State(state.iteration + 1, state.value + state.previous.value, state);
+		})).startWith(STATE_ZERO.value);
 	}
 
 	static class State {

@@ -7,11 +7,19 @@ public class HandleGetRequestTask {
 
 	public static ReactiveRandom reactiveRandom;
 
-	public static int getRandomNumberHandler(RequestEntity<?> request) {
-		if (request.method != HttpMethod.GET) {
-			throw UNSUPPORTED_HTTP_METHOD;
-		 }
+//	public static int getRandomNumberHandler(RequestEntity<?> request) {
+//		if (request.method != HttpMethod.GET) {
+//			throw UNSUPPORTED_HTTP_METHOD;
+//		 }
+//
+//		return reactiveRandom.nextInt().block();
+//	}
 
-		return reactiveRandom.nextInt().block();
+	public static Mono<Integer> getRandomNumberHandler(RequestEntity<?> request) {
+		if (request.method != HttpMethod.GET) {
+			return Mono.error(UNSUPPORTED_HTTP_METHOD);
+		}
+
+		return reactiveRandom.nextInt();
 	}
 }

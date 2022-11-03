@@ -8,11 +8,18 @@ import reactor.core.publisher.Flux;
 
 public class TextFileStreamTask {
 
-	public static Iterable<String> readFile(String filename) {
-		try {
-			return Files.lines(Paths.get(filename)).collect(Collectors.toList());
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+//	public static Iterable<String> readFile(String filename) {
+//		try {
+//			return Files.lines(Paths.get(filename)).collect(Collectors.toList());
+//		} catch (IOException e) {
+//			throw new RuntimeException(e);
+//		}
+//	}
+	public static Flux<String> readFile(String filename) {
+		return Flux.using(
+			() -> Files.lines(Paths.get(filename)),
+			Flux::fromStream,
+			Stream::close
+		);
 	}
 }
