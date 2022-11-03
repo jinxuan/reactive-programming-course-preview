@@ -5,6 +5,7 @@ import reactor.core.scheduler.Schedulers;
 public class Task {
 
 	public static Publisher<String> publishOnParallelThreadScheduler(Flux<String> source) {
-		return Flux.error(new ToDoException());
+//		return Flux.error(new ToDoException());
+		return source.publishOn(Schedulers.parallel());
 	}
 }

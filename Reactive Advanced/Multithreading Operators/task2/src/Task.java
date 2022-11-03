@@ -7,6 +7,9 @@ import reactor.core.scheduler.Schedulers;
 public class Task {
 
 	public static Publisher<String> subscribeOnSingleThreadScheduler(Callable<String> blockingCall) {
-		return Mono.error(new ToDoException());
+//		return Mono.error(new ToDoException());
+//		return Mono.fromCallable(blockingCall).publishOn(Schedulers.parallel());
+		return Mono.fromCallable(blockingCall)
+				.subscribeOn(Schedulers.boundedElastic());
 	}
 }
