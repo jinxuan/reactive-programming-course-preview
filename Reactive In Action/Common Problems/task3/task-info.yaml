@@ -32,7 +32,7 @@ files:
 - name: src/ReactivePaymentsHistoryJpaRepositoryAdapter.java
   visible: true
   placeholders:
-  - offset: 279
+  - offset: 400
     length: 61
     placeholder_text: // use ExecutorService or Scheduler to offload blocking calls
     initial_state:
@@ -40,17 +40,17 @@ files:
       offset: 279
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: KOoXdZyPRyzAk4h+JuVBuRV4BIsVrleg2fMJN312rc3z61HYJWQopo0LnikH3SRAmvDjAcXmHi7lVWuaZrIleXnjwNYTLXtp/qc9uq39QB56WzAb39tgTmgk9Qkitga87E98/O5QXZNW6nE7UzaVyhp/O80UprPgOoZ8R3jaYKwd/yuo1a+FXUbqeiIBUSQmY3PmCa7CISMyVXZmgtOzXC6bsVF/LFxp0iveiHNBGR+NXzfV/MsUylxY7DJ0Tbz99uaMW1agXte0a9yN44J/DteJTJFdBBPA6LAB1XpPWl7XcwJWRUXdjqrIYfUGTa1I
-  - offset: 746
-    length: 32
+  - offset: 884
+    length: 250
     placeholder_text: Flux.error(new ToDoException());
     initial_state:
       length: 32
       offset: 746
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: z2HZKoGeldN1tOQIb97iK7qsi9ZaHbGrnn//ReFv7sRjWtwENB9DQtUBumu0kq622lKNtUjZmJ/TXCtle8dnR1s+ERD0bC7AB/TQqZEu5Jo79rb+nmcdInllbGekNj66W7cLgHB58HGxOsapF8SsxhS4MjFRd82tntL3bnJhEj0=
   encrypted_text: OzKQNBcfrRaba4bVrqSTWOoe8RvA0PmaSQOEpx6oFrQ1C3x0dyp7sq00JiSUWl/t4lyNeba49kE9OwY4YGERnrAKIVZsR6bRXUtJ2LfKkeVY/q8awSRe/Nl9Ji72g5+TZexcrYdsRCs0mfmr98VtKWALMR+C9tI32niW6CpGbmYIJuo8qJdYB2pgVsPOzBhraUAD8Y6bJHV0B4lEdnRfrgeLn+QrwXjWbNS+wFmIi0CNY7sdGnksUiA2c41DJM5iHwC/5pSHP0FJd03qiHr34q5W/MhjZpZps3QIPWSdOSmFeiAsWpEpTUBp15wp9NZiTUeypunYFiyGlGbY5ZkMgs+7kCRf/40QOionwoPQhG65fyiqGWV1Oe9osjDcYwzaQ5kmAMXpEELR5wrB90ic6EGLlBEk/ULGsZke/gPX7msWnI+3HkCh686HlYRfl6ljAx9+MBnnf1q8JJJcSoO3GfA7tHpsWmgCicb0LAq6PtQmNWnUN9I34QP1WqutgHuNFLJg9cHl+2RTKboqqcRa7G0yqqJQZGxqvzDQzfDmST5p/QyV3tbFlw95QoyJPsCa9aY+ZWkni7MJYrTA6J3ocsqAIpmLVtR604Dpu1efEqtxi7vuMhRcDAQWwjFiJfITzVd9dSsAjKneDOcN5iikayqzjZ/bJSB8h93A4u5xnEGMthe1MVRAmy5cJ05X39DoHvfqUaS3kaEovSeEBJ6O0vVKoGY9Jgs8lAmcN/PdFgjVtPUtmqscIcshdYxOZuGeQGVvq20LOshU1Bdawc9n7DBTeKTPIgzH3ZkSeNNdSVo+oEmE4r2qhqTXP2iIho6vIm4AJv35Wr9xw5dbfGjQGCkY9gmDF105sBxYB45Z1gSzcI+gafjO36xC+oK9XtMt4ypheL+TNCpej0MtsRUlqe5/hq9cMzHixaVX8eNd6/ffZPbhwN1NDIK81EfQdR+UqPOjFhkHTz4Jz4MP+8mjX6WgxRHCulFQduuQsDlL2+NQ8odmW6Wce/mdd4oP2eYa8SN36w7CL185KAibV/12YQ==
   learner_created: false
@@ -58,5 +58,8 @@ files:
   visible: false
   encrypted_text: ITs8Nv8EH6QWJG5nufD7nJbQJMkIq6jNfe9FYz1aEl0gzoXUE/n+Nrs7oURaMo+izTdxMl4rIbyY4m6gOdQClMF1uG9jHNLfe96Qru7gNaO+7fF33K/Q4lYeA95yB/ayyKxuwvjRcm67IE1RrUxOLmV0Vz6AuCaN/yZJgTZI2mrgMgMSmssjpPSCWwuFwZq92gL9YFXZ2APhMOb3pSBu6y1VJu4zf4QCPrx/BqdZ3TGZj0sQaAGei/p3fyFx1W7JnUlEv+gkr+zT7I7IZGHipnA4uEbF8Hu9h+UWcI0tvtW0df31wKfkPj2tBQnrCCY8WPpc/4GmNKOUkMJ4QOFJuItydYNC3IfKgZWtdGL1kD0ArF52EoGzNeTUJin75/6T1yJpIlVWtRBZ65cQQcRpyS8Kp20YyHjvxyRrP8PcX22ud887Jsc3FraUlE+ZLc/wn4Ub0zK5T5ki1YXH3CbCJWF/HDUmW55f9jOLrfnqqq8JZ0VFdVnz21JBa4zshT4IHbHO1qW6qQCQKqbHStBuQcswlZJtL+2+Xze9jE2cti0TkxjuanDkD5jo3BmVF3gd3WRQ4N29FDDUANw03mOtf+0h7NpHyDb/S/RXzQnUqPX+mSzlxZkqx4efpFEfWVru5anB/eza/XLl4P4uN4bZ7w==
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 03 Nov 2022 18:36:36 UTC"
 record: -1
